@@ -1,31 +1,38 @@
-# Svelte app
+# My SvelteKit template
 
-This is a project template for my [Svelte](https://svelte.dev) apps. It lives at https://github.com/leomet07/svelte-template.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-Create a new project based off this template with my cli tool, [svelte-gen](https://github.com/leomet07/sveltegen).
+## Creating a project
 
-## Get started
-
-Install the dependencies...
+If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-npm install
+# create a new project in the current directory
+npm create svelte@latest
+
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
 
-...then start the development server:
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-npm run serve
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-Navigate to [localhost:5000](http://localhost:5000).
+## Building
 
-## Building and running in production mode
-
-To create an optimised version of the app:
+To create a production version of your app:
 
 ```bash
 npm run build
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies`.
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
