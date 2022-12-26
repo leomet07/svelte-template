@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import "../globals.css";
 	import Navbar from "../components/Navbar.svelte";
 </script>
